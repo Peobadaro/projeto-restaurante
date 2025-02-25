@@ -16,11 +16,15 @@ body {
 /* Carousel */
 .carousel-section {
     margin-top: -56px;
+    max-height: 600px;
+    overflow: hidden;
 }
 
 .carousel-item img {
-    height: 100vh;
+    height: 60vh;
     object-fit: cover;
+    width: 100%;
+    max-height: 600px;
 }
 
 /* Menu Section */
@@ -120,7 +124,7 @@ body {
 /* Responsividade */
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 50vh;
+        height: 40vh;
     }
 
     .contact-info {
@@ -139,5 +143,9 @@ body {
 
     .card-img-top {
         height: 150px;
+    }
+
+    .carousel-item img {
+        height: 30vh;
     }
 } 
